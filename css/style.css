@@ -45,6 +45,25 @@ hr {
   text-align: center;
 }
 
+.big-text {
+  font-size: 1.17rem;
+  text-transform: uppercase;
+}
+
+.medium-text { font-size: 1rem; }
+
+@media (min-width: 568px) {
+  .big-text { font-size: 1.5rem; }
+  .medium-text { font-size: 1.17rem; }
+}
+
+@media (min-width: 768px) {
+  .big-text { font-size: 2rem; }
+}
+
+
+/* Resume Layout and View */
+
 
 /* Layout & Threme */
 
@@ -85,26 +104,13 @@ footer {
   background-color: #0022ee;
 }
 
-.header-text {
-  font-size: 1.17rem;
-  text-transform: uppercase;
+.lt-sm-bottom-margin {
+  margin-bottom: 0.5rem;
 }
-
-.sub-header-text { font-size: 1rem; }
-
-@media (min-width: 568px) {
-  .header-text { font-size: 1.5rem; }
-  .sub-header-text { font-size: 1.17rem; }
-}
-
-@media (min-width: 768px) {
-  .header-text { font-size: 2rem; }
-}
-
-.lt-md-bottom-margin {
+.lt-sm-bottom-margin-dbl {
   margin-bottom: 1rem;
 }
 
-@media (min-width: 768px) {
-  .lt-md-bottom-margin { margin-bottom: 0; }
+@media (min-width: 568px) {
+  .lt-sm-bottom-margin, .lt-sm-bottom-margin-dbl { margin-bottom: 0; }
 }
