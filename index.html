@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  <base href="http://www.paulpengdotcom.com/">
+  <!--base href="http://www.paulpengdotcom.com/"-->
   <meta charset="utf-8">
   <title>Paul Peng</title>
   <meta name="description" content="Furry porn in a post-structuralist phenomenological wrapper. Drawings by Paul Peng.">
@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="http://yui.yahooapis.com/combo?pure/0.6.0/base-min.css&pure/0.6.0/grids-min.css&pure/0.6.0/grids-responsive-min.css">
   <!--<![endif]-->
   <link rel="stylesheet" href="css/style.css">
+  <script src="js/smooth-scroll.min.js"></script>
 </head>
 
 <body>
@@ -28,13 +29,13 @@
 
   <nav class="medium-sec big-text pure-g">
     <div class="pure-u-1 pure-u-sm-1-3 centered lt-sm-bottom-margin">
-      <a href="#work">Work</a>
+      <a data-scroll href="#work">Work</a>
     </div>
     <div class="pure-u-1 pure-u-sm-1-3 centered lt-sm-bottom-margin">
-      <a href="#about">About</a>
+      <a data-scroll href="#about">About</a>
     </div>
     <div class="pure-u-1 pure-u-sm-1-3 centered">
-      <a href="#contact">Contact</a>
+      <a data-scroll href="#contact">Contact</a>
     </div>
   </nav>
 </header>
@@ -183,6 +184,10 @@
 
 </main>
 <footer></footer>
+
+<script>
+  smoothScroll.init();
+</script>
 </body>
 
 </html>
