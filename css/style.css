@@ -1,5 +1,3 @@
-/* see if we can just use borders isntead of a hr... */
-
 /* Base */
 
 html,
@@ -7,12 +5,31 @@ html,
   font-family: 'Karla', sans-serif;
 }
 html {
-  font-size: 14pt;
+  font-size: 12pt;
 }
 
 body {
   background-color: white;
   color: #0022ee;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 1rem 0;
+}
+
+p {
+  font-size: 12pt;
+}
+
+@media (min-width: 568px) {
+  p {
+    font-size: 14pt;
+  }
+}
+
+hr {
+  border-style: none;
+  border-top: 1px solid #0022ee;
 }
 
 a,
@@ -23,59 +40,69 @@ a:active {
   text-decoration: none;
 }
 
-a > .icon {
-  color: #0022ee !important;
-}
 
-nav {
-  border-style: solid none;
-  border-width: 1px 0;
-  padding: 1rem 0;
-}
-
-hr {
-  border-style: none;
-  border-top: 1px solid;
-}
-
-
-/* Views */
+/* skins */
 
 .centered {
   text-align: center;
 }
 
 .big-text {
-  font-size: 1.17rem;
+  font-size: 1.5rem;
   text-transform: uppercase;
-}
-
-.medium-text { font-size: 1rem; }
-
-@media (min-width: 568px) {
-  .big-text { font-size: 1.5rem; }
-  .medium-text { font-size: 1.17rem; }
 }
 
 @media (min-width: 768px) {
   .big-text { font-size: 2rem; }
 }
 
+.menu-bar {
+  text-align: center;
+  border-style: solid none;
+  border-width: 1px 0;
+  padding: 1rem 0;
+}
 
-/* Resume Layout and View */
+.text-block {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 768px;
+}
 
 
-/* Layout & Threme */
+/* local resets */
 
-main {
+.color-reset {
+  color: #0022ee;
+}
+
+
+/* modules */
+
+.grid-list {
+  margin: 0;
+  padding-left: 0;
+}
+.grid-list-el {
+  display: block;
+}
+
+
+/* Layout */
+
+.outer-container {
   margin: 0 5%;
   width: 90%;
 }
 
-.big-sec, hr {
-  margin: 2rem auto;
+.inner-container {
+  margin: 0 auto;
   width: 100%;
   max-width: 850px;
+}
+
+.big-sec {
+  margin: 2rem auto;
 }
 
 .medium-sec {
@@ -98,19 +125,16 @@ main {
   .small-sec { margin: 2rem auto; }
 }
 
-footer {
-  width: 100%;
-  height: 2rem;
-  background-color: #0022ee;
-}
-
 .lt-sm-bottom-margin {
   margin-bottom: 0.5rem;
 }
-.lt-sm-bottom-margin-dbl {
-  margin-bottom: 1.5rem;
-}
 
 @media (min-width: 568px) {
-  .lt-sm-bottom-margin, .lt-sm-bottom-margin-dbl { margin-bottom: 0; }
+  .lt-sm-bottom-margin { margin-bottom: 0; }
+}
+
+.bottom {
+  width: 100%;
+  height: 2rem;
+  background-color: #0022ee;
 }
