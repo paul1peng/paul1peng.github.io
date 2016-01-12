@@ -17,16 +17,6 @@ h1, h2, h3, h4, h5, h6 {
   margin: 1rem 0;
 }
 
-p {
-  font-size: 12pt;
-}
-
-@media (min-width: 568px) {
-  p {
-    font-size: 14pt;
-  }
-}
-
 hr {
   border-style: none;
   border-top: 1px solid #0022ee;
