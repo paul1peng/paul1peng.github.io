@@ -74,7 +74,7 @@ a:active {
   padding-left: 0;
 }
 .grid-list-el {
-  display: block;
+  display: inline-block;
 }
 
 
