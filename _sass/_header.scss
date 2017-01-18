@@ -1,0 +1,72 @@
+/* Styling and layout of site header */
+
+.site-header {
+  @extend %layout-section;
+
+  font-size: $site-header-font-size;
+  font-weight: $site-header-font-weight;
+  font-style: italic;
+  background: $bg-color;
+  overflow: hidden;
+
+  position: fixed;
+  left: 0;
+  top: 0;
+
+  padding: $site-gutter;
+  z-index: 3;
+
+  @media (min-width: $breakpt-spacing) {
+    padding: $site-gutter $site-gutter-lg $site-gutter-lg;
+  }
+
+  @media (min-width: $breakpt-header) {
+    padding: $site-gutter-lg;
+    z-index: 1;
+    .collapsed {
+      height: auto;
+    }
+  }
+}
+.site-header.collapsed {
+  height: $site-header-collapsed-height;
+  @media (min-width: $breakpt-header) {
+    height: auto;
+  }
+}
+
+.site-header a {
+  color: $font-color;
+}
+.site-header a:hover {
+  color: $link-color;
+}
+
+.site-header-toggle {
+  cursor: pointer;
+  @media (min-width: $breakpt-header) {
+    visibility: hidden;
+  }
+}
+
+
+.site-title {
+  @extend %layout-section-max-width;
+
+  font-size: $site-title-font-size;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.site-nav {
+  @extend %layout-section-max-width;
+
+  display: flex;
+  justify-content: space-between;
+}
+.site-nav-section {
+  @extend %layout-section;
+  width: $site-nav-section-width;
+}

@@ -1,0 +1,83 @@
+/* Aligns */
+
+.text-align-left {
+  text-align: left;
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+.text-align-right {
+  text-align: right;
+}
+
+/* Floats */
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+/* Clearfix */
+
+.container::before,
+.container::after {
+  content: "";
+  display: table;
+}
+.container::after {
+  clear: both;
+}
+.container {
+  zoom: 1;
+}
+
+
+/* Flat Lists */
+
+.flat-list {
+  padding-left: 0;
+}
+.flat-list > li {
+  display: block;
+}
+
+.flat-list-spaced {
+  @extend .flat-list;
+}
+.flat-list-spaced > li {
+  margin: 1em 0;
+}
+
+
+/* Generic Layout Section */
+
+%layout-section {
+  box-sizing: border-box;
+  width: 100%;
+}
+%layout-section :first-child {
+  margin-top: 0;
+}
+%layout-section :last-child {
+  margin-bottom: 0;
+}
+
+%layout-section-max-width {
+  @extend %layout-section;
+  max-width: $max-width;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/* Text Sections */
+
+.text-section {
+  @extend %layout-section;
+  max-width: $text-section-max-width;
+}

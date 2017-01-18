@@ -1,0 +1,23 @@
+html {
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  font-weight: $base-font-weight;
+  color: $font-color;
+  background: $bg-color;
+}
+
+img {
+  width: 100%;
+}
+
+h1 {
+  font-size: 1.66em;
+  width: 100%;
+  font-size: $main-header-font-size;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: $link-color;
+}

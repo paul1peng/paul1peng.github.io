@@ -1,76 +1,151 @@
-<!DOCTYPE html>
-<html lang="en-us">
+---
+layout: default
+---
 
-<head>
-  <meta charset="utf-8">
-  <title>Paul Peng</title>
-  <meta name="description" content="Paul's Peng.">
-  <meta name="author" content="Paul Peng">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <script>
-    /*! modernizr 3.3.1 (Custom Build) | MIT *
-     * https://modernizr.com/download/?-textshadow-setclasses !*/
-     !function(e,n,t){function o(e,n){return typeof e===n}function r(){var e,n,t,r,s,i,a;for(var l in h)if(h.hasOwnProperty(l)){if(e=[],n=h[l],n.name&&(e.push(n.name.toLowerCase()),n.options&&n.options.aliases&&n.options.aliases.length))for(t=0;t<n.options.aliases.length;t++)e.push(n.options.aliases[t].toLowerCase());for(r=o(n.fn,"function")?n.fn():n.fn,s=0;s<e.length;s++)i=e[s],a=i.split("."),1===a.length?Modernizr[a[0]]=r:(!Modernizr[a[0]]||Modernizr[a[0]]instanceof Boolean||(Modernizr[a[0]]=new Boolean(Modernizr[a[0]])),Modernizr[a[0]][a[1]]=r),m.push((r?"":"no-")+a.join("-"))}}function s(e){var n=v.className,t=Modernizr._config.classPrefix||"";if(g&&(n=n.baseVal),Modernizr._config.enableJSClass){var o=new RegExp("(^|\\s)"+t+"no-js(\\s|$)");n=n.replace(o,"$1"+t+"js$2")}Modernizr._config.enableClasses&&(n+=" "+t+e.join(" "+t),g?v.className.baseVal=n:v.className=n)}function i(e,n){return!!~(""+e).indexOf(n)}function a(){return"function"!=typeof n.createElement?n.createElement(arguments[0]):g?n.createElementNS.call(n,"http://www.w3.org/2000/svg",arguments[0]):n.createElement.apply(n,arguments)}function l(e){return e.replace(/([a-z])-([a-z])/g,function(e,n,t){return n+t.toUpperCase()}).replace(/^-/,"")}function f(e){return e.replace(/([A-Z])/g,function(e,n){return"-"+n.toLowerCase()}).replace(/^ms-/,"-ms-")}function u(){var e=n.body;return e||(e=a(g?"svg":"body"),e.fake=!0),e}function d(e,t,o,r){var s,i,l,f,d="modernizr",p=a("div"),c=u();if(parseInt(o,10))for(;o--;)l=a("div"),l.id=r?r[o]:d+(o+1),p.appendChild(l);return s=a("style"),s.type="text/css",s.id="s"+d,(c.fake?c:p).appendChild(s),c.appendChild(p),s.styleSheet?s.styleSheet.cssText=e:s.appendChild(n.createTextNode(e)),p.id=d,c.fake&&(c.style.background="",c.style.overflow="hidden",f=v.style.overflow,v.style.overflow="hidden",v.appendChild(c)),i=t(p,e),c.fake?(c.parentNode.removeChild(c),v.style.overflow=f,v.offsetHeight):p.parentNode.removeChild(p),!!i}function p(n,o){var r=n.length;if("CSS"in e&&"supports"in e.CSS){for(;r--;)if(e.CSS.supports(f(n[r]),o))return!0;return!1}if("CSSSupportsRule"in e){for(var s=[];r--;)s.push("("+f(n[r])+":"+o+")");return s=s.join(" or "),d("@supports ("+s+") { #modernizr { position: absolute; } }",function(e){return"absolute"==getComputedStyle(e,null).position})}return t}function c(e,n,r,s){function f(){d&&(delete w.style,delete w.modElem)}if(s=o(s,"undefined")?!1:s,!o(r,"undefined")){var u=p(e,r);if(!o(u,"undefined"))return u}for(var d,c,m,h,y,v=["modernizr","tspan","samp"];!w.style&&v.length;)d=!0,w.modElem=a(v.shift()),w.style=w.modElem.style;for(m=e.length,c=0;m>c;c++)if(h=e[c],y=w.style[h],i(h,"-")&&(h=l(h)),w.style[h]!==t){if(s||o(r,"undefined"))return f(),"pfx"==n?h:!0;try{w.style[h]=r}catch(g){}if(w.style[h]!=y)return f(),"pfx"==n?h:!0}return f(),!1}var m=[],h=[],y={_version:"3.3.1",_config:{classPrefix:"",enableClasses:!0,enableJSClass:!0,usePrefixes:!0},_q:[],on:function(e,n){var t=this;setTimeout(function(){n(t[e])},0)},addTest:function(e,n,t){h.push({name:e,fn:n,options:t})},addAsyncTest:function(e){h.push({name:null,fn:e})}},Modernizr=function(){};Modernizr.prototype=y,Modernizr=new Modernizr;var v=n.documentElement,g="svg"===v.nodeName.toLowerCase(),C={elem:a("modernizr")};Modernizr._q.push(function(){delete C.elem});var w={style:C.elem.style};Modernizr._q.unshift(function(){delete w.style});var S=y.testProp=function(e,n,o){return c([e],t,n,o)};Modernizr.addTest("textshadow",S("textShadow","1px 1px")),r(),s(m),delete y.addTest,delete y.addAsyncTest;for(var x=0;x<Modernizr._q.length;x++)Modernizr._q[x]();e.Modernizr=Modernizr}(window,document);
-  </script>
-  <style>
-    html {
-      font-size: 14pt;
-    }
+<section class="main-section">
+  <img src="/images/from-unactualized-painting.jpg" alt="(from unactualized painting)"/>
+</section>
 
-    .textshadow {
-      color: transparent;
-      text-shadow: 0 0 5px black;
-    }
-    .textshadow a {
-      text-decoration: none;
-      color: transparent;
-      text-shadow: 0 0 5px blue;
-    }
+<section class="main-section">
+  <img src="/images/how-empty-do-you-feel.jpg" alt="How empty do you really feel inside? Not at all, I bet."/>
+</section>
 
-    a {
-      text-decoration: none;
-      color: blue;
-    }
+<section class="main-section">
+  <img class="width-45 width-33-lg" src="/images/smiling.jpg" alt="Cartoon face and markmaking study."/>
+  <img class="width-45 width-33-lg" src="/images/marks.jpg" alt="Markmaking study."/>
+</section>
 
-    body {
-      padding-bottom: 20px;
-    }
+<section class="main-section">
+  <img class="width-67-lg" src="/images/collaps.jpg" alt="Past self collaps into single self"/>
+</section>
 
-    header img {
-      margin-top: 30px;
-      width: 100%;
-      max-width: 800px;
-      float: left;
-      margin-right: 80px;
-    }
+<section class="main-section">
+  <img class="width-50 width-33-lg" src="/images/push-ups.jpg" alt="Push ups."/>
+</section>
 
-    h1 {
-      font-size: 18pt;
-      font-style: italic;
-      font-weight: normal;
-    }
-
-    li {
-      display: block;
-    }
-  </style>
-</head>
-
-<body>
-  <header>
-    <img src="furry.jpg" alt="Paul's Peng"/>
-    <h1>Paul's Peng</h1>
-  </header>
-  <main>
-    <p>Pittsburgh PA US</p>
-    <p>2016 Art and Computer Science<br/>Carnegie Mellon University</p>
-    <ul>
-      <li><a href="http://hypertyping.tumblr.com/" target="_blank">Tumblr</a></li>
-      <li><a href="http://instagram.com/pppaulpeng" target="_blank">Instagram</a></li>
-      <li><a href="https://twitter.com/1732051" target="_blank">Twitter</a></li>
+<section id="about" class="main-section">
+  <h1>About</h1>
+  <div class="main-subsection width-45-lg no-margin-lg text-section">
+    <img src="/images/ephemeral.jpg" alt="I'm ephemeral!"/>
+    <p>Paul's Peng</p>
+    <p>Art person.<br/>Pittsburgh PA US</p>
+    <ul class="flat-list">
+      <li><a href="http://hypertyping.tumblr.com">Tumblr</a></li>
+      <li><a href="http://instagram.com/pppaulpeng">Instagram</a></li>
+      <li><a href="https://twitter.com/1732051">Twitter</a></li>
     </ul>
-    <address><a href="mailto:me@paulpengdotcom.com">me@paulpengdotcom.com</a></address>
-  </main>
-</body>
+    <address><a href="mailto:{{ site.email }}">{{ site.email }}</a></address>
+  </div>
+  {% comment %}
+  <div class="main-subsection width-45-lg no-margin-lg text-section">
+    <h2>Statement</h2>
+    <p>
+      I draw to actualize moments of suppressed, post-human vulnerability.
+      Drawing from the teen power fantasies of the mid-2000s, as seen on sites
+      like DeviantArt, and their forms in narrative, picturehood, and the
+      diagrammatic, I front these sources with the power fantasies of today:
+      those of the postmodernist academian bad boy, the tech worker,
+      the bougie-becoming.
+    </p>
+    <p><em>
+      (A fanfiction of the sparkledog-angel-demon hybrid as bougie-becoming:
+      front-end software engineering at the city’s hottest startup incubator,
+      running a small-batch craft brewery in their downtime. Meeting up with
+      a baby-faced dragon boy they met on the Deleuze and Guattari Facebook
+      page three months ago and taking off from some post-industrial rooftop,
+      flying towards a Death Grips concert at the local Ace Hotel.
+      God I wish that were me.)</em>
+    </p>
+    <p>
+      I draw the bodies of these fantasies and where to find them: assemblages
+      of marks, texts, and the bodies themselves. These drawings accumulate
+      the discomfort and anxiety that these fantasies found themselves on
+      and find in themselves and each other. Picture-drawing that accumulates
+      and assembles desperate gestures toward bodily validation at the cost
+      of anything else, gestures that force each other into a picture for
+      a moment, but only for a moment.
+    </p>
+  </div>
+  {% endcomment %}
+</section>
 
-</html>
+<section id="cv" class="main-section">
+  <h1>CV</h1>
+  <div class="width-33-lg main-subsection no-margin-lg">
+
+    <h2>Education</h2>
+    <p>
+      <em>BCSA, Computer Science and Art</em>
+      <br/> Carnegie Mellon University, Pittsburgh PA
+      <br/> 2012&ndash;2017
+    </p>
+
+    <h2>Exhibitions</h2>
+    <p>
+      <em>The Rest of Your Life</em>
+      <br/> The Ellis Gallery, Pittsburgh PA
+      <br/> December 2016
+    </p>
+    <p>
+      <em>Sixth Annual Pittsburgh Zine Fair</em>
+      <br/> Union Project, Pittsburgh PA
+      <br/> October 2016
+    </p>
+    <p>
+      <em>Drawings to Forget</em>
+      <br/> The Frame Gallery, Pittsburgh PA
+      <br/> September 2016
+    </p>
+    <p>
+      <em>Free Germs: CMU Senior Art Exhibition</em>
+      <br/> The Miller Gallery, Pittsburgh PA
+      <br/> April&ndash;May 2016
+    </p>
+
+    <h2>Talks</h2>
+    <p>
+      <em>3rd Annual B&star;A Presentations</em>
+      <br/> Carnegie Mellon University, Pittsburgh PA
+      <br/> October 2015
+    </p>
+    <p>
+      <em>2nd Annual B&star;A Presentations</em>
+      <br/> Carnegie Mellon University, Pittsburgh PA
+      <br/> November 2014
+    </p>
+
+  </div>
+  <div class="width-33-lg main-subsection no-margin-lg">
+
+    <h2>Work</h2>
+    <p>
+      <em>Research Assistant</em>
+      <br/> School of Art Fabrication Facilities
+      <br/> Carnegie Mellon University, Pittsburgh PA
+      <br/> June&ndash;August 2016
+    </p>
+    <p>
+      <em>Performance Assistant</em>
+      <br/> Manual for Urban Projection
+      <br/> Kickstarter Summer Festival, New York City
+      <br/> July 2016
+    </p>
+    <p>
+      <em>Student Advisory Council Representative</em>
+      <br/> School of Art
+      <br/> Carnegie Mellon University, Pittsburgh PA
+      <br/> 2014&ndash;2016
+    </p>
+    <p>
+      <em>Co-Organizer</em>
+      <br/> 3rd Annual B&star;A Presentations
+      <br/> Carnegie Mellon University, Pittsburgh PA
+      <br/> September&ndash;October 2015
+    </p>
+
+  </div>
+</section>
+
+<section class="main-section">
+  <img class="width-67-lg" src="/images/asriel.jpg" alt="Asriel."/>
+</section>
