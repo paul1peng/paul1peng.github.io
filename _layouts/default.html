@@ -17,16 +17,17 @@
   {% endcomment %}
 </head>
 
+
 <body>
 
-<div class="header-wrapper">
-  <h1 class="site-infra infra-layout">
+<div class="header-position">
+  <h1 class="infra-style infra-spacing">
     <a href="/">Paul</a>
     <a href="/">Peng</a>
   </h1>
 </div>
 
-<main class="main-layout">
+<main class="main-spacing main-position">
   {{ content }}
 </main>
 
@@ -48,14 +49,18 @@
   {% assign prevPageUrl = "/" %}
 {% endif %}
 
-<div class="nav-wrapper">
-  <nav class="site-infra infra-layout">
-    <div><a href="{{ nextPageUrl }}">&larr;</a></div>
-    <div><a href="{{ prevPageUrl }}">&rarr;</a></div>
+{% endif %}
+
+<div class="nav-position">
+  <nav class="infra-style infra-spacing">
+    {% if site.posts.size > 0 %}
+      <div><a href="{{ nextPageUrl }}">&larr;</a></div>
+    {% endif %}
+    {% if site.posts.size > 0 %}
+      <div><a href="{{ prevPageUrl }}">&rarr;</a></div>
+    {% endif %}
   </nav>
 </div>
-
-{% endif %}
 
 </body>
 

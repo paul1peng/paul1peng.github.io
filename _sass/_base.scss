@@ -17,13 +17,14 @@ a {
   color: $link-color;
 }
 
-.site-infra {
+.infra-style {
+  background: $bg-color;
   font-size: $site-infra-font-size;
   font-style: italic;
 }
-.site-infra a {
+.infra-style a {
   color: $font-color;
 }
-.site-infra a:hover {
+.infra-style a:hover {
   color: $link-color;
 }

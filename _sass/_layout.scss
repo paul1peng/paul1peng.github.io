@@ -1,6 +1,6 @@
-/* General site layout */
+/* Spacing */
 
-@mixin base-layout($padding: 0, $margin: 0, $direction: row) {
+@mixin base-spacing($padding: 0, $margin: 0, $direction: row) {
   box-sizing: border-box;
   width: 100%;
 
@@ -13,9 +13,9 @@
   align-items: flex-start;
 }
 
-@mixin layout($small-gutter, $large-gutter, $bottom-gutter) {
-  .infra-layout {
-    @include base-layout(
+@mixin spacing($small-gutter, $large-gutter, $bottom-gutter) {
+  .infra-spacing {
+    @include base-spacing(
       $padding: $small-gutter,
       $margin: auto
     );
@@ -23,64 +23,84 @@
     max-width: $max-width;
   }
 
-  .main-layout {
-    @include base-layout(
-      $padding: 0 $small-gutter ($bottom-gutter - $large-gutter),
+  $infra-height: $small-gutter * 2 + $site-infra-font-size;
+
+  .main-spacing {
+    // NOTE: not quite sure how to decouple spacing and positioning from main.
+    // the top-padding relies on the positioning of the infra elements
+    @include base-spacing(
+      $padding: $infra-height $small-gutter ($bottom-gutter - $large-gutter + $infra-height),
       $direction: column
     );
-    overflow-x: hidden;
+    overflow-x: hidden; // to account for row-spacing overflowing
     max-width: $max-width-main;
   }
 
-  .row-layout {
-    @include base-layout(
+  .row-spacing {
+    @include base-spacing(
       $margin: 0 (-$large-gutter / 2)
     );
+    // to account for negative margins making content width >%100 percent
     width: #{"calc(100% +"} $large-gutter #{")"};
   }
 
-  .item-layout {
+  .item-spacing {
     box-sizing: border-box;
     padding: 0 ($large-gutter / 2) $large-gutter;
   }
 
 }
 
-@include layout($site-gutter, $site-gutter, $footer-gutter);
+@include spacing($site-gutter, $site-gutter, $footer-gutter);
 
 @media (min-width: $bp-gutter) {
-  @include layout($site-gutter-lg, $site-gutter-lg, $footer-gutter-lg);
+  @include spacing($site-gutter-lg, $site-gutter-lg, $footer-gutter-lg);
 }
 
 @media (min-width: $bp-position) {
-  @include layout($site-gutter-lg, $main-gutter, $footer-gutter-xl);
-}
+  @include spacing($site-gutter-lg, $main-gutter, $footer-gutter-xl);
 
-
-/* Positioning on desktop */
-
-@media (min-width: $bp-position) {
-  .header-wrapper {
-    position: fixed;
-    left: 0;
-    top: 0;
-    z-index: 1;
-    width: 100%;
-  }
-  .nav-wrapper {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    z-index: 1;
-    width: 100%;
-  }
-
-  .main-layout {
-    position: relative;
+  // NOTE: not quite sure how to decouple spacing and positioning from main.
+  // most of the stuff here can fall under one or the other...
+  .main-spacing {
     padding-top: $site-gutter-lg;
+    // for side spacing vvv
     width: #{"calc(100% -"} 2 * $width-side #{")"};
     margin: auto;
-    max-width: $max-width-main;
-    z-index: 2;
   }
+}
+
+
+/* Infra Positioning */
+
+%infra-position {
+  position: fixed;
+  left: 0;
+  z-index: 3;
+  width: 100%;
+}
+
+.header-position {
+  @extend %infra-position;
+  top: 0;
+}
+
+.nav-position {
+  @extend %infra-position;
+  bottom: 0;
+}
+
+.footer-position {
+  @extend %infra-position;
+}
+
+@media (min-width: $bp-position) {
+  .header-position, .nav-position {
+    z-index: 1;
+  }
+}
+
+.main-position {
+  position: relative;
+  z-index: 2;
 }
