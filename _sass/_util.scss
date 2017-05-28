@@ -1,3 +1,10 @@
+/* No Margins */
+
+.no-margins {
+  margin: 0;
+}
+
+
 /* Aligns */
 
 .text-align-left {
@@ -44,40 +51,4 @@
 }
 .flat-list > li {
   display: block;
-}
-
-.flat-list-spaced {
-  @extend .flat-list;
-}
-.flat-list-spaced > li {
-  margin: 1em 0;
-}
-
-
-/* Generic Layout Section */
-
-%layout-section {
-  box-sizing: border-box;
-  width: 100%;
-}
-%layout-section :first-child {
-  margin-top: 0;
-}
-%layout-section :last-child {
-  margin-bottom: 0;
-}
-
-%layout-section-max-width {
-  @extend %layout-section;
-  max-width: $max-width;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-
-/* Text Sections */
-
-.text-section {
-  @extend %layout-section;
-  max-width: $text-section-max-width;
 }

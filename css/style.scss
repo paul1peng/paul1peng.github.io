@@ -3,26 +3,14 @@
 @charset "utf-8";
 
 
-/* breakpoints */
-
-$breakpt-spacing: 34.375rem;  // 550px
-$breakpt-header: 56.25rem;    // 900px
-
-
 /* styling variables */
 
 $base-font-family: Times, "Times New Roman", serif;
 $base-font-weight: 400;
 
-$base-font-size:   12pt;
-
-$site-title-font-size: 1rem * (4/3);
-$site-header-font-size: 1rem * (7/6);
-$site-header-font-weight: 600;
-
-$main-header-font-size: 1rem * 2;
-
-$caption-font-size: 1rem * (3/4);
+$base-font-size: 12pt;
+$site-infra-font-size: 1rem * (4/3);
+$site-footer-font-size: 1rem * (7/6);
 
 $bg-color: white;
 $font-color: black;
@@ -31,27 +19,9 @@ $link-color: blue;
 
 /* layout variables */
 
-$max-width: 93.75rem;  // 1500px
+$small-gutter: 0.625rem; // 10px
 
-$text-section-min-width: 16.875rem; // 270px, about 40 characters per line
-$text-section-max-width: 27.5rem;  // 440px, about 66 characters per line
-
-$site-gutter: 0.625rem;  // 10px
-$site-gutter-lg: $site-gutter * 2;
-$site-nav-section-width: 7.5rem;  // 120px
-
-$site-header-collapsed-height: $site-gutter * 2 + $site-title-font-size;
-
-$main-section-min-height-to-vpw: 3/4;
-
-$main-section-gutter: $site-gutter * 4;
-$main-section-gutter-lg: $site-gutter * 8;
-
-$main-subsection-spacing: $site-gutter * 2;
-$main-subsection-spacing-lg: $site-gutter * 4;
-
-$h-spacing: $site-gutter * 2;
-$h-spacing-lg: $site-gutter * 4;
+$bottom-gutter: $small-gutter * 4;
 
 
 // Use media queries like this:
@@ -68,7 +38,5 @@ $h-spacing-lg: $site-gutter * 4;
 @import
         "util",
         "base",
-        "header",
-        "main",
-        "width"
+        "layout"
 ;

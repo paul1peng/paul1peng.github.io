@@ -1,0 +1,23 @@
+/* General site layout */
+
+%layout {
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.infra-layout {
+  @extend %layout;
+  padding: $small-gutter;
+  margin: 0;
+}
+
+.main-layout {
+  margin-bottom: $bottom-gutter;
+}
+
+.item-layout {
+  margin: 0 $small-gutter $small-gutter;
+}
