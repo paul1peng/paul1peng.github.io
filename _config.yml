@@ -1,10 +1,20 @@
 title: "Paul Peng"
-email: "me@paulpengdotcom.com"
 description: "Paul's Peng."
 language: "en-us"
 
 baseurl: ""
 url: "www.paulpengdotcom.com"
+
+social_media:
+  -
+    name: Tumblr
+    url: "http://hypertyping.tumblr.com/"
+  -
+    name: Instagram
+    url: "https://www.instagram.com/pppaulpeng/"
+  -
+    name: Twitter
+    url: "https://twitter.com/1732051"
 
 defaults:
   -

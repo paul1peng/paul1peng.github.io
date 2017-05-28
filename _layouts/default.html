@@ -66,11 +66,17 @@
 
 <footer id="siteFooter" class="footer-position footer-style collapsed">
   <div class="footer-spacing">
-    <a class="footer-item-spacing">About</a>
+    {% for infoPage in site.pages %}
+    {% if infoPage.isInfoPage %}
+    <a class="footer-item-spacing" href="{{ infoPage.url }}">{{ infoPage.title }}</a>
+    {% endif %}
+    {% endfor %}
+    {% if site.pages.size > 0 and site.social_media.size > 0 %}
     <div class="footer-item-spacing">&mdash;</div>
-    <a class="footer-item-spacing">Tumblr</a>
-    <a class="footer-item-spacing">Instagram</a>
-    <a class="footer-item-spacing">Twitter</a>
+    {% endif %}
+    {% for socialMedia in site.social_media %}
+    <a class="footer-item-spacing" href="{{ socialMedia.url }}">{{ socialMedia.name }}</a>
+    {% endfor %}
   </div>
 </footer>
 
