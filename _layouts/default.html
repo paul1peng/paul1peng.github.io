@@ -49,27 +49,28 @@
   {% assign prevPageUrl = "/" %}
 {% endif %}
 
+{% else %}
+
+{% assign nextPageUrl = "/" %}
+{% assign prevPageUrl = "/" %}
+
 {% endif %}
 
 <div class="nav-position">
   <nav class="infra-style infra-spacing">
-    {% if site.posts.size > 0 %}
-      <div><a href="{{ nextPageUrl }}">&larr;</a></div>
-    {% endif %}
+    <div><a href="{{ nextPageUrl }}">&larr;</a></div>
     <div id="footerToggle">{% include dots-vertical.svg %}</div>
-    {% if site.posts.size > 0 %}
-      <div><a href="{{ prevPageUrl }}">&rarr;</a></div>
-    {% endif %}
+    <div><a href="{{ prevPageUrl }}">&rarr;</a></div>
   </nav>
 </div>
 
 <footer id="siteFooter" class="footer-position footer-style collapsed">
   <div class="footer-spacing">
-    <a>About</a>
-    &mdash;
-    <a>Tumblr</a>
-    <a>Instagram</a>
-    <a>Twitter</a>
+    <a class="footer-item-spacing">About</a>
+    <div class="footer-item-spacing">&mdash;</div>
+    <a class="footer-item-spacing">Tumblr</a>
+    <a class="footer-item-spacing">Instagram</a>
+    <a class="footer-item-spacing">Twitter</a>
   </div>
 </footer>
 

@@ -53,13 +53,15 @@
 
 .footer-spacing {
   @include base-spacing(
-    $padding: $site-gutter,
+    $padding: $site-gutter ($site-gutter / 2),
     $direction: column
   );
   justify-content: space-between;
+  flex-wrap: nowrap;
   align-items: center;
   max-width: $max-width-main;
   margin: auto;
+  overflow-x: scroll;
 }
 
 @include spacing($site-gutter, $site-gutter, $footer-gutter);
@@ -81,6 +83,10 @@
     width: #{"calc(100% -"} 2 * $width-side #{")"};
   }
 
+}
+
+.footer-item-spacing {
+  margin: 0 ($site-gutter / 2);
 }
 
 
