@@ -1,23 +1,86 @@
 /* General site layout */
 
-%layout {
+@mixin base-layout($padding: 0, $margin: 0, $direction: row) {
   box-sizing: border-box;
   width: 100%;
+
+  margin: $margin;
+  padding: $padding;
+
   display: flex;
-  justify-content: space-between;
+  flex-direction: $direction;
+  flex-wrap: wrap;
   align-items: flex-start;
 }
 
-.infra-layout {
-  @extend %layout;
-  padding: $small-gutter;
-  margin: 0;
+@mixin layout($small-gutter, $large-gutter, $bottom-gutter) {
+  .infra-layout {
+    @include base-layout(
+      $padding: $small-gutter,
+      $margin: auto
+    );
+    justify-content: space-between;
+    max-width: $max-width;
+  }
+
+  .main-layout {
+    @include base-layout(
+      $padding: 0 $small-gutter ($bottom-gutter - $large-gutter),
+      $direction: column
+    );
+    overflow-x: hidden;
+    max-width: $max-width-main;
+  }
+
+  .row-layout {
+    @include base-layout(
+      $margin: 0 (-$large-gutter / 2)
+    );
+    width: #{"calc(100% +"} $large-gutter #{")"};
+  }
+
+  .item-layout {
+    box-sizing: border-box;
+    padding: 0 ($large-gutter / 2) $large-gutter;
+  }
+
 }
 
-.main-layout {
-  margin-bottom: $bottom-gutter;
+@include layout($site-gutter, $site-gutter, $footer-gutter);
+
+@media (min-width: $bp-gutter) {
+  @include layout($site-gutter-lg, $site-gutter-lg, $footer-gutter-lg);
 }
 
-.item-layout {
-  margin: 0 $small-gutter $small-gutter;
+@media (min-width: $bp-position) {
+  @include layout($site-gutter-lg, $main-gutter, $footer-gutter-xl);
+}
+
+
+/* Positioning on desktop */
+
+@media (min-width: $bp-position) {
+  .header-wrapper {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+  }
+  .nav-wrapper {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+    width: 100%;
+  }
+
+  .main-layout {
+    position: relative;
+    padding-top: $site-gutter-lg;
+    width: #{"calc(100% -"} 2 * $width-side #{")"};
+    margin: auto;
+    max-width: $max-width-main;
+    z-index: 2;
+  }
 }

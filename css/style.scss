@@ -19,24 +19,38 @@ $link-color: blue;
 
 /* layout variables */
 
-$small-gutter: 0.625rem; // 10px
+/* gutters on the side of the site */
+$site-gutter: 0.625rem; // 10px
+$site-gutter-lg: $site-gutter * 2;
 
-$bottom-gutter: $small-gutter * 4;
+/* gutter separating main from footer and nav */
+$footer-gutter: $site-gutter * 4;
+$footer-gutter-lg: $site-gutter * 8;
+$footer-gutter-xl: $site-gutter * 16;
+
+/* gutter separating content in desktop format */
+$main-gutter: $site-gutter * 8;
+
+$max-width-main: 75rem;
+$width-side: $site-gutter * 8;
+$max-width: $max-width-main + 2 * $width-side;
 
 
-// Use media queries like this:
-// @include media-query($on-palm) {
-//     .wrapper {
-//         padding-right: $spacing-unit / 2;
-//         padding-left: $spacing-unit / 2;
-//     }
-// }
+
+/* breakpoints */
+
+/* increase gutter sizing */
+$bp-gutter: 40rem;
+
+/* switch to positioning for desktop format */
+$bp-position: 55rem;
 
 
+/* imports */
 
-// Import partials from `sass_dir` (defaults to `_sass`)
 @import
         "util",
         "base",
-        "layout"
+        "layout",
+        "width"
 ;

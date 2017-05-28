@@ -19,30 +19,6 @@
   text-align: right;
 }
 
-/* Floats */
-
-.float-left {
-  float: left;
-}
-
-.float-right {
-  float: right;
-}
-
-/* Clearfix */
-
-.container::before,
-.container::after {
-  content: "";
-  display: table;
-}
-.container::after {
-  clear: both;
-}
-.container {
-  zoom: 1;
-}
-
 
 /* Flat Lists */
 
