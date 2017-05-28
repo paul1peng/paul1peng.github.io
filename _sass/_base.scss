@@ -29,7 +29,24 @@ a {
   color: $link-color;
 }
 
+.footer-style {
+  background: $footer-bg-color;
+  font-size: $site-footer-font-size;
+  font-style: italic;
+  color: $footer-font-color;
+}
+.footer-style a {
+  color: $footer-font-color;
+}
+.footer-style a:hover {
+  color: $footer-hover-color;
+}
+
 /* Footer toggle */
+
+#footerToggle {
+  height: 1em;
+}
 
 @media (min-width: $bp-position) {
   #footerToggle {

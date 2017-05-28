@@ -10,11 +10,14 @@ $base-font-weight: 400;
 
 $base-font-size: 12pt;
 $site-infra-font-size: 1rem * (4/3);
-$site-footer-font-size: 1rem * (7/6);
+$site-footer-font-size: 1rem; // * (7/6);
 
 $bg-color: white;
 $font-color: black;
 $link-color: blue;
+$footer-bg-color: #bbb;
+$footer-font-color: white;
+$footer-hover-color: #ddf;
 
 
 /* layout variables */
