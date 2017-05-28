@@ -1,7 +1,11 @@
-/* No Margins */
+/* Cut inside margins (for text) */
 
-.no-margins {
-  margin: 0;
+.text-item :first-child {
+  margin-top: 0;
+}
+
+.text-item :last-child {
+  margin-bottom: 0;
 }
 
 
