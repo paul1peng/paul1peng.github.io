@@ -28,3 +28,11 @@ a {
 .infra-style a:hover {
   color: $link-color;
 }
+
+/* Footer toggle */
+
+@media (min-width: $bp-position) {
+  #footerToggle {
+    display: none;
+  }
+}

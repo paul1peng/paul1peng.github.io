@@ -21,11 +21,10 @@ $link-color: blue;
 
 /* gutters on the side of the site */
 $site-gutter: 0.625rem; // 10px
-$site-gutter-lg: $site-gutter * 2;
+$site-gutter-xl: $site-gutter * 2;
 
 /* gutter separating main from footer and nav */
 $footer-gutter: $site-gutter * 4;
-$footer-gutter-lg: $site-gutter * 8;
 $footer-gutter-xl: $site-gutter * 16;
 
 /* gutter separating content in desktop format */
@@ -39,7 +38,7 @@ $max-width: $max-width-main + 2 * $width-side;
 /* breakpoints */
 
 /* increase gutter sizing */
-$bp-gutter: 40rem;
+$bp-width: 40rem;
 
 /* switch to positioning for desktop format */
 $bp-position: 55rem;

@@ -53,17 +53,13 @@
 
 @include spacing($site-gutter, $site-gutter, $footer-gutter);
 
-@media (min-width: $bp-gutter) {
-  @include spacing($site-gutter-lg, $site-gutter-lg, $footer-gutter-lg);
-}
-
 @media (min-width: $bp-position) {
-  @include spacing($site-gutter-lg, $main-gutter, $footer-gutter-xl);
+  @include spacing($site-gutter-xl, $main-gutter, $footer-gutter-xl);
 
   // NOTE: not quite sure how to decouple spacing and positioning from main.
   // most of the stuff here can fall under one or the other...
   .main-spacing {
-    padding-top: $site-gutter-lg;
+    padding-top: $site-gutter-xl;
     // for side spacing vvv
     width: #{"calc(100% -"} 2 * $width-side #{")"};
     margin: auto;

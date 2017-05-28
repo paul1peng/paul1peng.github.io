@@ -20,7 +20,7 @@
   max-width: 25%;
 }
 
-@media (min-width: $bp-gutter) {
+@media (min-width: $bp-width) {
   .width-3-4-lg {
     max-width: 75%;
   }
@@ -42,7 +42,7 @@
   }
 }
 
-@media (min-width: $bp-gutter) {
+@media (min-width: $bp-position) {
   .width-3-4-xl {
     max-width: 75%;
   }
