@@ -23,7 +23,7 @@
     max-width: $max-width;
   }
 
-  $infra-height: $small-gutter * 2 + $site-infra-font-size;
+  $infra-height: $small-gutter * 2 + $site-infra-font-size * $base-line-height;
 
   .main-spacing {
     // NOTE: not quite sure how to decouple spacing and positioning from main.
