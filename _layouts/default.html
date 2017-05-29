@@ -30,6 +30,13 @@
 
 <main class="main-spacing main-position">
   {{ content }}
+  {% if page.isInfoPage %}
+  <div class="row-spacing">
+  <div class="item-spacing">
+  <a href="/">&larr; &larr;</a>
+  </div>
+  </div>
+  {% endif %}
 </main>
 
 {% if site.posts.size > 0 %}
@@ -59,9 +66,9 @@
 
 <div class="nav-position">
   <nav class="infra-style infra-spacing">
-    <div><a href="{{ nextPageUrl }}">&larr;</a></div>
+  <div {% if page.isInfoPage %}style="visibility: hidden"{% endif %}><a href="{{ nextPageUrl }}">&larr;</a></div>
     <div id="footerToggle">{% include dots-vertical.svg %}</div>
-    <div><a href="{{ prevPageUrl }}">&rarr;</a></div>
+    <div {% if page.isInfoPage %}style="visibility: hidden"{% endif %}><a href="{{ prevPageUrl }}">&rarr;</a></div>
   </nav>
 </div>
 
