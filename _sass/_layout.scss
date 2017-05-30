@@ -118,6 +118,7 @@
   @extend %infra-position;
   bottom: $site-infra-font-size + 2 * $site-gutter;
   max-height: #{"calc(100% -"} ($site-infra-font-size + 2 * $site-gutter) #{")"};
+  overflow: hidden;
 }
 
 @media (min-width: $bp-position) {
