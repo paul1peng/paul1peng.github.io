@@ -56,12 +56,8 @@
     $padding: ($site-gutter / 2),
     $direction: column
   );
-  justify-content: space-between;
-  flex-wrap: nowrap;
   align-items: center;
-  max-width: $max-width-main;
   margin: auto;
-  overflow-x: scroll;
 }
 
 .footer-item-spacing {
@@ -84,7 +80,10 @@
 
   .footer-spacing {
     flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: nowrap;
     width: #{"calc(100% -"} 2 * $width-side #{")"};
+    max-width: $max-width-main;
   }
 
 }
@@ -119,7 +118,6 @@
   @extend %infra-position;
   bottom: $site-infra-font-size + 2 * $site-gutter;
   max-height: #{"calc(100% -"} ($site-infra-font-size + 2 * $site-gutter) #{")"};
-  overflow: scroll;
 }
 
 @media (min-width: $bp-position) {
