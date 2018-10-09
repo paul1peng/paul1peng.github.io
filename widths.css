@@ -1,0 +1,22 @@
+.w-v-narrow { max-width: 256px; }
+.w-narrow { max-width: 256px; }
+.w-normal { max-width: 288px; }
+.w-wide { max-width: 320px; }
+@media (min-width: 704px) {
+    .w-v-narrow { max-width: 320px; }
+    .w-narrow { max-width: 384px; }
+    .w-normal { max-width: 448px; }
+    .w-wide { max-width: 512px; }
+}
+@media (min-width: 896px) {
+    .w-v-narrow { max-width: 384px; }
+    .w-narrow { max-width: 512px; }
+    .w-normal { max-width: 640px; }
+    .w-wide { max-width: 768px; }
+}
+@media (min-width: 1284px) {
+    .w-v-narrow { max-width: 640px; }
+    .w-narrow { max-width: 768px; }
+    .w-normal { max-width: 896px; }
+    .w-wide { max-width: 1024px; }
+}
