@@ -1,0 +1,358 @@
+/* Base styling */
+
+html {
+  font: 1rem/1.4 "Wremena", serif;
+  font-feature-settings: "lnum" 1;
+  height: 100%;
+}
+
+h1, h2, h3, p {
+  margin: 1rem 0;
+  font-weight: normal;
+}
+
+img {
+  font-size: 0.75rem;
+}
+
+a {
+  color: #00f;
+}
+
+/* Image Containers */
+
+.imgbox {
+  position: relative;
+}
+
+.imgbox-inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.imgbox img {
+  max-width: 100%;
+  max-height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);;
+}
+
+/* Simple layout */
+
+.simple {
+  position: relative;
+  padding: 6rem 1rem 3rem;
+  max-width: 80rem;
+  margin: auto;
+}
+
+.simple-backlink {
+  position: absolute;
+  left: 1rem;
+  top: 1.5rem;
+  border: 0.25rem ridge #fff;
+  margin: 0;
+  padding: 0.375rem 0.5rem;
+}
+
+.simple-backlink a::before {
+  content: "↑";
+}
+
+@media (min-width: 25em) {
+  .simple {
+    padding: 6rem 3rem 3rem;
+  }
+  .simple-backlink {
+    left: 3rem;
+  }
+}
+
+/* Single layout */
+
+.single {
+  position: relative;
+  height: 100%;
+  max-width: 90rem;
+  max-height: 60rem;
+  margin: auto;
+  overflow: visible;
+}
+
+.single-main {
+  position: absolute;
+  box-sizing: border-box;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 8.5rem;
+  padding: 1rem 1rem 0;
+}
+
+.single-main--small {
+  padding: 2rem;
+}
+
+.single-main-inner {
+  height: 100%;
+  margin: auto;
+}
+
+.single-header {
+  position: absolute;
+  box-sizing: border-box;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 8.5rem;
+  padding: 1rem 1rem 1.5rem;
+  max-width: 22rem;
+  margin: auto;
+}
+
+.single-header-text {
+  position: absolute;
+  top: 4.5rem;
+  max-width: 15rem;
+  padding: 0 0 1rem;
+}
+
+.single-header-text-title {
+  display: inline;
+  margin: 0;
+  font-size: inherit;
+  font-weight: bold;
+}
+
+.single-header-text-caption {
+  display: inline;
+  margin: 0;
+}
+
+.single-header-text-title + .single-header-text-caption::before {
+  content: "·";
+  margin: 0 0.5em 0 0.25em;
+}
+
+.single-header-nav {
+  border: 0.25rem ridge #fff;
+  padding: 0.375rem 0.5rem;
+}
+
+.single-header-nav::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.single-header-nav-index {
+  margin: 0;
+  float: left;
+}
+
+.single-header-nav-index a::before {
+  content: "↑";
+}
+
+.single-header-nav-pag {
+  float: right;
+}
+
+.single-header-nav-pag-next {
+  margin: 0;
+  float: right;
+}
+
+.single-header-nav-pag-next a::before {
+  content: "→";
+}
+
+.single-header-nav-pag-prev {
+  margin: 0;
+  float: left;
+}
+
+.single-header-nav-pag-prev a::before {
+  content: "←";
+}
+
+.single-header-nav-pag-next + .single-header-nav-pag-prev::after {
+  content: "·";
+  color: #00f;
+  padding: 0 0.5em;
+}
+
+@media (min-width:60em) {
+  .single {
+    max-height: 50rem;
+  }
+
+  .single-main {
+    right: 16rem;
+    bottom: 0;
+    padding: 1rem;
+  }
+
+  .single-main--small {
+    padding: 3rem;
+  }
+
+  .single-header {
+    position: absolute;
+    top: 0;
+    left: auto;
+    height: auto;
+    width: 16rem;
+    padding: 1rem 3rem 3rem 3rem;
+  }
+
+  .single-header-text {
+    width: 10rem;
+    top: auto;
+    padding: 0;
+    bottom: 3rem;
+  }
+
+  .single-header-nav-index {
+    margin: 0 0 1rem;
+    float: none;
+  }
+
+  .single-header-nav-pag {
+    float: none;
+    display: table;
+  }
+}
+
+/* Index layout */
+
+.index {
+  padding: 3rem 1rem 4rem;
+  max-width: 80rem;
+  margin: auto;
+}
+
+@media (min-width: 29em) {
+  .index {
+    padding: 3rem 3rem 4rem;
+  }
+}
+
+@media (min-width: 50em) {
+  .index {
+    padding: 3rem 6rem 4rem;
+  }
+}
+
+.index-header {
+  display: table;
+  margin: 0 auto 2rem;
+  max-width: 40em;
+  font-size: 1.125rem;
+  padding: 0 1.5rem 0 1rem;
+}
+
+@media (min-width: 40em) {
+  .index-header {
+    margin: 0 auto 3rem;
+  }
+}
+
+@media (min-width: 75em) {
+  .index-header {
+    padding: 0 7rem 0 1rem;
+  }
+}
+
+.index-pfp {
+  float: left;
+  margin-right: 1rem;
+  background-color: #ccc;
+}
+
+.index-about {
+  margin: 0;
+  max-width: 30em;
+}
+
+.index-main {
+  box-sizing: border-box;
+  max-width: 64rem;
+  margin: 4rem auto 0;
+  padding: 0;
+  border: 0.125rem outset #fff;
+}
+
+.index-main::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.index-main-item {
+  display: block;
+  float: left;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 2rem;
+  border: 0.125rem inset #fff;
+}
+.index-main-item--small {
+  padding: 3rem;
+}
+
+.index-main-item--e2,
+.index-main-item--e3 {
+  display: none;
+}
+
+@media (min-width: 35em) {
+  .index-main-item {
+    width: 50%;
+  }
+
+  .index-main-item--e2 {
+    display: block;
+  }
+}
+
+@media (min-width: 60em) {
+  .index-main-item {
+    width: 33.33%;
+  }
+
+  .index-main-item--e2 {
+    display: none;
+  }
+
+  .index-main-item--e3 {
+    display: block;
+  }
+}
+
+.index-main-item .imgbox {
+  /* We expect an imgbox in every index item.
+   * This gives it a square aspect ratio. */
+  padding-bottom: 100%;
+}
+
+
+/* Utility classes */
+
+.srt {
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  word-wrap: normal !important;
+}
