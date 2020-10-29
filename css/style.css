@@ -292,6 +292,7 @@ a {
 
 .index-linklist a {
   text-decoration: none;
+  color: #00c;
 }
 
 .index-linklist a:hover {
@@ -318,9 +319,9 @@ a {
   padding: 0;
   /*
   border: 0.125rem outset #fff;
-  */
   border-left: 1px solid #ccc;
   border-top: 1px solid #ccc;
+  */
 }
 
 .index-main::after {
@@ -337,9 +338,9 @@ a {
   padding: 1rem;
   /*
   border: 0.125rem inset #fff;
-  */
   border-right: 1px solid #ccc;
   border-bottom: 1px solid #ccc;
+  */
 }
 
 .index-main-item--small {
@@ -379,12 +380,6 @@ a {
   /* We expect an imgbox in every index item.
    * This gives it a square aspect ratio. */
   padding-bottom: 100%;
-}
-
-.index-main-item a img:hover {
-  /* Clickable area gets an outline to make it really obvious it's clickable */
-  padding: 0.25rem;
-  border: 1px solid #00f;
 }
 
 
