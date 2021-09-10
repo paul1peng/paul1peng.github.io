@@ -10,7 +10,16 @@
     <title>Curriculum Vitae—Paul Peng</title>
     <style>
       .cv {
+        max-width: 62rem;
         line-height: 1.5;
+      }
+      .cv::after {
+        content: "";
+        display: block;
+        clear: both;
+      }
+      .cv-text {
+        margin-top: 1rem;
       }
       .cv p {
         position: relative;
@@ -30,6 +39,23 @@
         padding-left: 3em;
         text-indent: -3em;
       }
+      .cv-pic {
+        display: block;
+        margin: 1rem 0 0;
+        max-width: 100%;
+        height: auto;
+        background-color: #fff;
+        color: #fff;
+      }
+      @media (min-width: 66em) {
+        .cv-text {
+          margin-top: 0;
+          float: left;
+        }
+        .cv-pic {
+          float: right;
+        }
+      }
     </style>
   </head>
   <body class="simple">
@@ -39,150 +65,158 @@
     <h1 class="simple-title">Curriculum Vitae</h1>
     
 
-    <div class="simple-main cv">
-      <h2>Education</h2>
-      <p style="max-width: 20em">
-        BCSA Computer Science and Art, Carnegie&nbsp;Mellon University,
-        Pittsburgh,&nbsp;PA. <span class="date">2017</span>
-      </p>
-      <p style="max-width: 16em">
-        Ox-Bow School of Art, Saugatuck,&nbsp;MI.
-        (Experimental Drawing&nbsp;Studio)
-        <span class="date">2017</span>
-      </p>
-      <p style="max-width: 16em">
-        Barnstone Studios, Coplay,&nbsp;PA.
-        (Drawing I, Color Control &amp;&nbsp;Theory)
-        <span class="date">2013</span>
-      </p>
-
-      <h2>Exhibitions</h2>
-
-      <h3>Solo Exhibitions</h3>
-      <p>Full Body Workout. Phosphor Project Space, Pittsburgh,&nbsp;PA.
-        <span class="date">2019</span>
-      </p>
-      <p>Fast Art for Fast People. PULLPROOF Studio, Pittsburgh,&nbsp;PA.
-        <span class="date">2019</span>
-      </p>
-      <p>2017 BODY. BOOM Concepts, Pittsburgh,&nbsp;PA.
-        <span class="date">2018</span>
-      </p>
-      <p>Sketchbook by Paul Peng. 2dcloud, online exhibition.
-        <a href="http://2dcloud.com/paul-peng-sketchbook">Link.</a>
-        (Curated by Blaise&nbsp;Larmee) <span class="date">2017</span>
-      </p>
-      <p>The Rest of Your Life. Ellis Gallery, Carnegie Mellon University,
-        Pittsburgh,&nbsp;PA. <span class="date">2016</span>
-      </p>
-      <p>Drawings to Forget. The Frame Gallery, Carnegie Mellon
-        University, Pittsburgh,&nbsp;PA. <span class="date">2016</span>
-      </p>
-
-      <h3>Group Exhibitions</h3>
-      <p>Swan Song. Phosphor Project Space, Pittsburgh,&nbsp;PA.
-        (Curated by Centa&nbsp;Schumacher)
-        <span class="date">2021</span>
-      </p>
-      <p>Change of Course. Brew House Association, Pittsburgh,&nbsp;PA.
-        (Curated by Heidi&nbsp;Wiren&nbsp;Bartlett)
-        <span class="date">2021</span>
-      </p>
-      <p>Glint. LOIS Projects, online exhibition. (Curated by
-        Patrick&nbsp;Bova and Lucas&nbsp;Regazzi)
-        <span class="date">2020</span>
-      </p>
-      <p>Sister Wendy Beckett: Envisioning Art. Harlan Gallery,
-        Seton Hill University, Greensburg,&nbsp;PA. (Curated by
-        Graham&nbsp;Shearing) <span class="date">2019</span>
-      </p>
-      <p>Ten Futures. 937 Gallery, Pittsburgh,&nbsp;PA.
-        (Curated by Fred&nbsp;Blauth and Dave&nbsp;Zak)
-        <span class="date">2018–2019</span>
-      </p>
-      <p>2018 New Member Exhibition, Associated Artists of Pittsburgh.
-        Butler Street Lofts, Pittsburgh,&nbsp;PA. (Curated by
-        Eowyn&nbsp;Mays) <span class="date">2018</span>
-      </p>
-      <p>Hickey. Little Berlin, Philadelphia,&nbsp;PA. (Curated by
-        Eric&nbsp;Anthony&nbsp;Berdis and Fred&nbsp;Blauth)
-        <span class="date">2018</span>
-      </p>
-      <p>By Means of Play. Gallery One, Pittsburgh,&nbsp;PA.
-        (Curated by Emma&nbsp;Vescio) <span class="date">2018</span>
-      </p>
-      <p>Free Germs: CMU Senior Art Exhibition. Miller ICA,
-        Pittsburgh,&nbsp;PA. <span class="date">2016</span>
-      </p>
-
-      <h2>Talks and Workshops</h2>
-      <p>Tiny Talk: Living Room Sessions. Small Mall, online talk.
-        <span class="date">2021</span>
-      </p>
-      <p>Change of Course: Virtual Conversation with the Artists.
-        Brew House Association, online talk.
-        <span class="date">2021</span>
-      </p>
-      <p>Pop Out. The Andy Warhol Museum, online talk and workshop.
-        <span class="date">2020</span>
-      </p>
-      <p>Artist talk for Full Body Workout (with Leylâ&nbsp;Çolpan).
-        Phosphor Project Space, Pittsburgh,&nbsp;PA.
-        <span class="date">2019</span>
-      </p>
-      <p>Pittsburgh Zine Fair Mixer. Bunker Projects, Pittsburgh,&nbsp;PA.
-        <span class="date">2018</span>
-      </p>
-      <p>Princess Jafar Workshop 2018. The Glitter Box Theater,
-        Pittsburgh,&nbsp;PA.<span class="date">2018</span>
-      </p>
-      <p>Artist talk for 2017 BODY. BOOM Concepts, Pittsburgh,&nbsp;PA.
-        <span class="date">2018</span>
-      </p>
-      <p>Pittsburgh Zine Fair Mixer. Bunker Projects, Pittsburgh,&nbsp;PA.
-        <span class="date">2017</span>
-      </p>
-      <p>4th Annual B☆A Presentations. Carnegie Mellon University,
-        Pittsburgh,&nbsp;PA. <span class="date">2017</span>
-      </p>
-      <p>3rd Annual B☆A Presentations. Carnegie Mellon University,
-        Pittsburgh,&nbsp;PA. <span class="date">2015</span>
-      </p>
-      <p>2nd Annual B☆A Presentations. Carnegie Mellon University,
-         Pittsburgh,&nbsp;PA. <span class="date">2014</span>
-      </p>
-
-      
-
-      <h2>Residencies</h2>
-      <p>Distillery Emerging Artist Residency Program, Brew House Association, Pittsburgh, PA.
-        <span class="date">2020–2021</span>
-      </p>
-      <p>North Mountain Residency, Shanghai, WV.
-        <span class="date">2018</span>
-      </p>
-
-      <h2>Bibliography</h2>
-      <div class="bib">
-        <p style="max-width:30em">Pedro Pérez Pedrero, “Artist profile: Paul Peng,”
-          Door Gallery, 2020. <a href="https://doorgallery.neocities.org/articles/5-artist-profile-paul-peng.html">Link.</a>
+    <main class="simple-main cv">
+      <div class="cv-text">
+        <h2 style="margin-top: 0">Education</h2>
+        <p style="max-width: 20em">
+          BCSA Computer Science and Art, Carnegie&nbsp;Mellon University,
+          Pittsburgh,&nbsp;PA. <span class="date">2017</span>
         </p>
-        <p>Nina Friedman, “Mark Zubrovich, Paul Peng, and Adam Linn
-          in Conversation with Nina Friedman,” The Bunker Projects
-          Review, interview audio, 2019.
-          <a href="https://www.bunkerprojects.org/review/mark-zubrovich-paul-peng-and-adam-linn-in-conversation-with-nina-friedman">Link.</a>
+        <p style="max-width: 16em">
+          Ox-Bow School of Art, Saugatuck,&nbsp;MI.
+          (Experimental Drawing&nbsp;Studio)
+          <span class="date">2017</span>
         </p>
-        <p>Zhiwan Cheung, “Episode 9: Grinding Work Into A Fine Hash
-          (w/ Paul Peng),” Seeing Color, Podcast audio, 2018.
-          <a href="https://seeingcolorpod.com/2018/12/18/episode-9-grinding-work-into-a-fine-hash-w-paul-peng/">Link.</a>
+        <p style="max-width: 16em">
+          Barnstone Studios, Coplay,&nbsp;PA.
+          (Drawing I, Color Control &amp;&nbsp;Theory)
+          <span class="date">2013</span>
         </p>
-        <p>Fred Blauth, “Paul Peng at BOOM Concepts,” QueerPGH, 2018.
-          <a href="http://www.queerpgh.com/paul-peng-boom-concepts/">Link.</a>
+
+        <h2>Exhibitions</h2>
+
+        <h3>Solo Exhibitions</h3>
+        <p>Full Body Workout. Phosphor Project Space, Pittsburgh,&nbsp;PA.
+          <span class="date">2019</span>
         </p>
-        <p>Blaise Larmee, untitled interview, Altcomics Magazine 5,
-          2dcloud,&nbsp;2017. 18–24.
+        <p>Fast Art for Fast People. PULLPROOF Studio, Pittsburgh,&nbsp;PA.
+          <span class="date">2019</span>
         </p>
+        <p>2017 BODY. BOOM Concepts, Pittsburgh,&nbsp;PA.
+          <span class="date">2018</span>
+        </p>
+        <p>Sketchbook by Paul Peng. 2dcloud, online exhibition.
+          <a href="http://2dcloud.com/paul-peng-sketchbook">Link.</a>
+          (Curated by Blaise&nbsp;Larmee) <span class="date">2017</span>
+        </p>
+        <p>The Rest of Your Life. Ellis Gallery, Carnegie Mellon University,
+          Pittsburgh,&nbsp;PA. <span class="date">2016</span>
+        </p>
+        <p>Drawings to Forget. The Frame Gallery, Carnegie Mellon
+          University, Pittsburgh,&nbsp;PA. <span class="date">2016</span>
+        </p>
+
+        <h3>Group Exhibitions</h3>
+        <p>Hazard Pay. Unsmoke Systems Artspace, Braddock,&nbsp;PA.
+          (Curated by Paul&nbsp;Mullins)
+          <span class="date">2021</span>
+        </p>
+        <p>Swan Song. Phosphor Project Space, Pittsburgh,&nbsp;PA.
+          (Curated by Centa&nbsp;Schumacher)
+          <span class="date">2021</span>
+        </p>
+        <p>Change of Course. Brew House Association, Pittsburgh,&nbsp;PA.
+          (Curated by Heidi&nbsp;Wiren&nbsp;Bartlett)
+          <span class="date">2021</span>
+        </p>
+        <p>Glint. LOIS Projects, online exhibition. (Curated by
+          Patrick&nbsp;Bova and Lucas&nbsp;Regazzi)
+          <span class="date">2020</span>
+        </p>
+        <p>Sister Wendy Beckett: Envisioning Art. Harlan Gallery,
+          Seton Hill University, Greensburg,&nbsp;PA. (Curated by
+          Graham&nbsp;Shearing) <span class="date">2019</span>
+        </p>
+        <p>Ten Futures. 937 Gallery, Pittsburgh,&nbsp;PA.
+          (Curated by Fred&nbsp;Blauth and Dave&nbsp;Zak)
+          <span class="date">2018–2019</span>
+        </p>
+        <p>2018 New Member Exhibition, Associated Artists of Pittsburgh.
+          Butler Street Lofts, Pittsburgh,&nbsp;PA. (Curated by
+          Eowyn&nbsp;Mays) <span class="date">2018</span>
+        </p>
+        <p>Hickey. Little Berlin, Philadelphia,&nbsp;PA. (Curated by
+          Eric&nbsp;Anthony&nbsp;Berdis and Fred&nbsp;Blauth)
+          <span class="date">2018</span>
+        </p>
+        <p>By Means of Play. Gallery One, Pittsburgh,&nbsp;PA.
+          (Curated by Emma&nbsp;Vescio) <span class="date">2018</span>
+        </p>
+        <p>Free Germs: CMU Senior Art Exhibition. Miller ICA,
+          Pittsburgh,&nbsp;PA. <span class="date">2016</span>
+        </p>
+
+        <h2>Talks and Workshops</h2>
+        <p>Tiny Talk: Living Room Sessions. Small Mall, online talk.
+          <span class="date">2021</span>
+        </p>
+        <p>Change of Course: Virtual Conversation with the Artists.
+          Brew House Association, online talk.
+          <span class="date">2021</span>
+        </p>
+        <p>
+          Pop Out. The Andy Warhol Museum, online talk and workshop.
+          <span class="date">2020</span>
+        </p>
+        <p>Artist talk for Full Body Workout (with Leylâ&nbsp;Çolpan).
+          Phosphor Project Space, Pittsburgh,&nbsp;PA.
+          <span class="date">2019</span>
+        </p>
+        <p>Pittsburgh Zine Fair Mixer. Bunker Projects, Pittsburgh,&nbsp;PA.
+          <span class="date">2018</span>
+        </p>
+        <p>Princess Jafar Workshop 2018. The Glitter Box Theater,
+          Pittsburgh,&nbsp;PA.<span class="date">2018</span>
+        </p>
+        <p>Artist talk for 2017 BODY. BOOM Concepts, Pittsburgh,&nbsp;PA.
+          <span class="date">2018</span>
+        </p>
+        <p>Pittsburgh Zine Fair Mixer. Bunker Projects, Pittsburgh,&nbsp;PA.
+          <span class="date">2017</span>
+        </p>
+        <p>4th Annual B☆A Presentations. Carnegie Mellon University,
+          Pittsburgh,&nbsp;PA. <span class="date">2017</span>
+        </p>
+        <p>3rd Annual B☆A Presentations. Carnegie Mellon University,
+          Pittsburgh,&nbsp;PA. <span class="date">2015</span>
+        </p>
+        <p>2nd Annual B☆A Presentations. Carnegie Mellon University,
+           Pittsburgh,&nbsp;PA. <span class="date">2014</span>
+        </p>
+
+        
+
+        <h2>Residencies</h2>
+        <p>Distillery Emerging Artist Residency Program, Brew House Association, Pittsburgh, PA.
+          <span class="date">2020–2021</span>
+        </p>
+        <p>North Mountain Residency, Shanghai, WV.
+          <span class="date">2018</span>
+        </p>
+
+        <h2>Bibliography</h2>
+        <div class="bib">
+          <p style="max-width:30em">Pedro Pérez Pedrero, “Artist profile: Paul Peng,”
+            Door Gallery, 2020. <a href="https://doorgallery.neocities.org/articles/5-artist-profile-paul-peng.html">Link.</a>
+          </p>
+          <p>Nina Friedman, “Mark Zubrovich, Paul Peng, and Adam Linn
+            in Conversation with Nina Friedman,” The Bunker Projects
+            Review, interview audio, 2019.
+            <a href="https://www.bunkerprojects.org/review/mark-zubrovich-paul-peng-and-adam-linn-in-conversation-with-nina-friedman">Link.</a>
+          </p>
+          <p>Zhiwan Cheung, “Episode 9: Grinding Work Into A Fine Hash
+            (w/ Paul Peng),” Seeing Color, Podcast audio, 2018.
+            <a href="https://seeingcolorpod.com/2018/12/18/episode-9-grinding-work-into-a-fine-hash-w-paul-peng/">Link.</a>
+          </p>
+          <p>Fred Blauth, “Paul Peng at BOOM Concepts,” QueerPGH, 2018.
+            <a href="http://www.queerpgh.com/paul-peng-boom-concepts/">Link.</a>
+          </p>
+          <p>Blaise Larmee, untitled interview, Altcomics Magazine 5,
+            2dcloud,&nbsp;2017. 18–24.
+          </p>
+        </div>
       </div>
-    </div>
+      
+    </main>
   </body>
 </html>
