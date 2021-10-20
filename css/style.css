@@ -54,8 +54,11 @@ a {
 /* Simple layout */
 
 .simple {
-  margin: 1rem 0 4rem;
+  border-bottom: 1rem solid #ccc;
+  padding: 1rem 0 4rem;
   max-width: 80rem;
+  min-height: calc(100% - 6rem);
+  margin: auto;
 }
 
 .simple-backlink {
@@ -82,11 +85,11 @@ a {
     padding: 0.75rem 1.25rem 1rem 0.75rem;
     border-bottom: 1px solid #999;
     border-right: 1px solid #999;
-    margin: -1rem 1rem 1rem;
+    margin: 0 1rem 1rem;
   }
 
   .simple-title {
-    margin: 2rem 1rem 2rem;
+    margin: 1rem 1rem 2rem;
     padding: 0 0.5rem;
     /* trigger block formatting context; stops it from flowing past backlink */
     overflow: hidden;
@@ -98,12 +101,12 @@ a {
 
 @media (min-width: 50em) {
   .simple-backlink {
-    margin: -2rem 2rem 1rem;
+    margin: 0 2rem 1rem;
     padding: 1.25rem 2.25rem 1.5rem 1.75rem;
   }
 
   .simple-title {
-    margin: 3rem 2rem 2rem;
+    margin: 2rem 2rem 2rem;
     padding: 0 0.5rem;
   }
   .simple-main {
@@ -296,8 +299,11 @@ a {
 /* Index layout */
 
 .index {
-  margin: 1rem 0 4rem;
+  border-bottom: 1rem solid #ccc;
+  padding: 1rem 0 4rem;
+  margin: auto;
   max-width: 80rem;
+  min-height: calc(100% - 6rem);
 }
 
 .index-header {
@@ -314,7 +320,9 @@ a {
 .index-galleryheader {
   margin: 3rem 0.5rem 2rem;
   padding: 0 0.25rem;
-  font-size: 1.25rem;
+  font-weight: bold;
+  font-size: 1rem;
+  text-transform: uppercase;
   border-top: 1px solid #999;
 }
 .index-gallery {
@@ -326,12 +334,20 @@ a {
 .index-gallery-item {
   box-sizing: content-box;
   display: inline-block;
-  padding: 1.75rem;
+  margin: 1.75rem;
   width: 12.5rem;
   vertical-align: middle;
+  text-align: middle;
+}
+.index-gallery-item--small {
+  margin: 2.75rem;
+  width: 10.5rem;
 }
 .index-gallery-item img {
   border: 1px solid #ccc;
+}
+.index-gallery-item img:hover {
+  border-color: #00f;
 }
 
 @media (min-width: 36em) {
@@ -366,11 +382,16 @@ a {
   .index-gallery {
     padding: 0;
   }
+  .index-gallery-item {
+    margin: 2rem 1.75rem;
+  }
 }
 
 @media (min-width: 50em) {
   .index-header {
     margin: 0 2rem 1rem;
+    padding-right: 2rem;
+    padding-bottom: 0.5rem;
   }
 
   .index-main {
@@ -378,6 +399,10 @@ a {
   }
   .index-galleryheader {
     margin: 5rem 0.5rem 3.5rem;
+  }
+  .index-gallery-item {
+    width: 15rem;
+    margin: 3rem 2rem;
   }
 }
 
