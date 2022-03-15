@@ -15,45 +15,35 @@
         clear: both;
       }
 
-      h2 {
-        font-weight: bold;
-        font-size: 1rem;
-        margin-top: 2rem;
-        text-transform: uppercase;
-      }
-
       main {
         max-width: 61rem;
-      }
-
-      main p {
-        max-width: 30em;
       }
 
       .bio-pic {
         display: block;
         margin: 0 0 1rem 0;
-        max-width: 100%;
-        height: auto;
         background-color: #336;
         color: #fff;
       }
 
-      @media (min-width: 48em) {
+      @media (min-width: 57em) {
         .bio-pic {
-          margin: 1.5rem 0 2rem 2rem;
+          margin: 2.8rem 0 2rem 2rem;
           float: right;
         }
       }
 
     </style>
   </head>
-  <body class="simple">
-    <p class="simple-backlink">
-      <a href="/">Paul Peng</a>
-    </p>
-    <h1 class="simple-title">Artist Biography &amp; Statement</h1>
-    <main class="simple-main">
+  <body class="page">
+    <header>
+      <h1 class="srt">Artist Biography &amp; Statement</h1>
+      <nav class="page-menu">
+        <a href="/">←Paul Peng</a>
+      </nav>
+    </header>
+    <p class="page-title" aria-hidden>Artist Biography &amp; Statement</p>
+    <main class="page-article">
       <img src="/images/ephemeral.jpg"
            width=440 height=330 alt="“I’m ephemeral!” —Drawing"
            class="bio-pic">
@@ -98,5 +88,56 @@
         this&nbsp;larger&nbsp;world.
       </p>
     </main>
+    <div class="simple" hidden>
+      <p class="simple-backlink">
+        <a href="/">Paul Peng</a>
+      </p>
+      <h1 class="simple-title">Artist Biography &amp; Statement</h1>
+      <main class="simple-main">
+        <img src="/images/ephemeral.jpg"
+             width=440 height=330 alt="“I’m ephemeral!” —Drawing"
+             class="bio-pic">
+        <h2>Biography</h2>
+        <p>
+          Paul Peng (b. 1994) is a drawing-based contemporary artist whose work
+          combines non-representational mark-making with cartoon figuration. 
+          He holds a BCSA in Computer Science and Art from Carnegie Mellon University
+          and has also studied classical drawing at Barnstone Studios in Coplay,&nbsp;PA
+          and experimental drawing at the <span style="white-space: nowrap">Ox-Bow</span> School of Art
+          in&nbsp;Saugatuck,&nbsp;MI.
+        </p>
+        <p>
+          Since completing undergrad in 2017, Paul has shown in multiple
+          group and solo exhibitions across Pittsburgh and was also a member
+          of the eleventh cohort of the Brew House Association’s
+          Distillery Emerging Artist Residency program. He has also
+          collaborated with experimental comics publisher 2dcloud, who has
+          published excerpts from his sketchbook on their website and released
+          an interview with him in their fifth issue of Altcomics&nbsp;Magazine.
+        </p>
+        <p>
+          Alongside his drawing and comics practice, Paul has experimented in
+          the past with stone lithography and conceptual writing. He currently
+          lives and works from Pittsburgh,&nbsp;PA.
+        </p>
+        <h2>Statement</h2>
+        <p>
+          Working from my personal history and experience with furry culture
+          and mass media fandoms, I approach cartooning as a form of abstract
+          expressionist drawing. My work weaves soft boyish faces, monstrous
+          fantasy bodies, and lushly rendered urban and pastoral settings
+          through a warp of stormy non-representational marks, creating
+          dense pictures that contest and complicate narrative meaning-making
+          in favor of the raw, open-ended energy of an atomic cartoon moment.
+        </p>
+        <p>
+          I want to explore what cartoon figures and spaces born from queer
+          teen alienation can express in a world where that alienation used
+          to exist but no longer does, and how these expressions can carve
+          out new ways of imaging and imagining how gay bodies navigate
+          this&nbsp;larger&nbsp;world.
+        </p>
+      </main>
+    </div>
   </body>
 </html>
