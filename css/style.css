@@ -181,7 +181,7 @@ a, .link-style {
 .page-galleryitem {
   box-sizing: border-box;
   display: inline-block;
-  width: 12.5rem;
+  width: 15rem;
   margin: 1.67rem 1.25rem;
 }
 .page-galleryitem-small {
@@ -192,7 +192,6 @@ a, .link-style {
     padding: 1.5rem;
   }
   .page-galleryitem {
-    width: 15rem;
     margin: 2rem 1.5rem;
   }
   .page-galleryitem-small {
